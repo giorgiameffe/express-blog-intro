@@ -34,3 +34,6 @@ const noticeBoard = [
         tags: ['#torta', '#paesana', '#dolce']
     }
 ]
+
+// esportare array 
+module.exports = noticeBoard;

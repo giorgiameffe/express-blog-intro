@@ -7,11 +7,20 @@ const app = express();
 // identificare la porta 
 const port = 3000;
 
-app.get('/', (req,res) => {
-    console.log('Ho chiamato la rotta principale');
-    res.send('Server del mio blog');
-})
-
+// avviare il server mettendolo in ascolto sulla porta definita
 app.listen(port, ()=> {
     console.log(`Sono un server attivo sulla porta ${port}`);
 })
+
+// definire prima rotta
+app.get('/', (req,res) => {
+    res.send('Server del mio blog');
+})
+
+// definire seconda rotta
+app.get('/bacheca', (req,res) => {
+    res.json(noticeBoard);
+})
+
+// importare array dal file foods.js
+const noticeBoard = require('./foods.js');
