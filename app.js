@@ -7,6 +7,9 @@ const app = express();
 // identificare la porta 
 const port = 3000;
 
+// configurare asset statici
+app.use(express.static('public'));
+
 // avviare il server mettendolo in ascolto sulla porta definita
 app.listen(port, ()=> {
     console.log(`Sono un server attivo sulla porta ${port}`);
