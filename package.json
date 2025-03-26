@@ -12,11 +12,14 @@
     "url": "git+https://github.com/giorgiameffe/express-blog-intro.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Giorgia Meffe",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/giorgiameffe/express-blog-intro/issues"
   },
   "homepage": "https://github.com/giorgiameffe/express-blog-intro#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
